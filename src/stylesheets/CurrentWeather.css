@@ -1,0 +1,40 @@
+#current_weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    width: 30rem;
+    border: none;
+    border-radius: 0px 11px;
+    box-shadow: 8px 12px 15px 3px #828282;
+}
+
+#weather_div {
+    order: 1;
+    background-color: transparent;
+}
+
+#solar_div {
+    order: 2;
+    background-color: transparent;
+}
+
+#atmos_div {
+    order: 3;
+    background-color: transparent;
+}
+
+#wind_div {
+    order: 4;
+    background-color: transparent;
+}
+
+@media all and (max-width: 720px) {
+    #current_weather {
+        width: 20rem;
+    }
+}
