@@ -1,2 +1,0 @@
-#current_weather{display:flex;flex-direction:column;justify-content:space-around;flex-wrap:nowrap;align-content:center;text-align:center;position:relative;top:20px;width:30rem;border:none;border-radius:0 11px;box-shadow:8px 12px 15px 3px #828282}#weather_div{order:1}#solar_div,#weather_div{background-color:transparent}#solar_div{order:2}#atmos_div{order:3}#atmos_div,#wind_div{background-color:transparent}#wind_div{order:4}@media (max-width:720px){#current_weather{width:20rem}}
-/*# sourceMappingURL=main.e6ee2394.chunk.css.map */
