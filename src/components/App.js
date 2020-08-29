@@ -83,7 +83,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='ui container' style={{display: "flex", justifyContent: "space-around", flexWrap: "nowrap"}}>
+            <div>
                 {this.renderContent()}
             </div>
         );
