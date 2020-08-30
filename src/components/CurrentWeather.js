@@ -15,7 +15,7 @@ const CurrentWeather = (props) => {
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     return (
-        <section className='ui container' id='main'>
+        <section id='main'>
             <div className='ui segments' id='current_weather'>
                 <div className='ui segment' id='weather_div'>
                     <img className="ui centered image" src={`http://openweathermap.org/img/w/${props.weather.icon}.png`}
