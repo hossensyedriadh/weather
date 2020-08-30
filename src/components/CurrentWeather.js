@@ -20,7 +20,7 @@ const CurrentWeather = (props) => {
                 <div className='ui segment' id='weather_div'>
                     <img  className="ui centered image" src={`http://openweathermap.org/img/w/${props.weather.icon}.png`}
                          alt={props.weather.weatherDesc} style={{width: "4.5rem"}}/>
-                    <h3 class="mb-3"><strong>{props.weather.weatherMain}</strong></h3>
+                    <h3 className="mb-3"><strong>{props.weather.weatherMain}</strong></h3>
                     <div id="place_day" className="mb-3">
                         <span className="row mb-2"><img src={require("../images/pin.png")} alt="place" style={{width: "1.5rem"}}/><p
                             className="mt-1 ml-2"><strong>{props.weather.location}</strong></p></span>
