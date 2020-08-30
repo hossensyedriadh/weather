@@ -131,6 +131,7 @@ html, body {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 #weather_div #temp {
@@ -189,6 +190,11 @@ html, body {
 
 @media only screen and (max-width: 720px) {
     #current_weather {
-        width: 25rem;
+        width: 22rem;
+    }
+
+    #place_day {
+        flex-direction: column;
+        align-self: center;
     }
 }

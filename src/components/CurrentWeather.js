@@ -25,7 +25,7 @@ const CurrentWeather = (props) => {
                         <span className="row mb-2"><img src={require("../images/pin.png")} alt="place" style={{width: "1.5rem"}}/><p
                             className="mt-1 ml-2"><strong>{props.weather.location}</strong></p></span>
                         <span className='row mb-2'><img src={require("../images/calendar.png")} alt="date" style={{width: "1.5rem"}}/><p
-                            className="mt-1 ml-3"><strong>{`${day[new Date(props.weather.time * 1000).getDay()]}, 
+                            className="mt-1 ml-2"><strong>{`${day[new Date(props.weather.time * 1000).getDay()]}, 
                         ${new Date(props.weather.time * 1000).getDate()} ${month[new Date(props.weather.time * 1000).getMonth()]}`}
                             </strong></p></span>
                     </div>
