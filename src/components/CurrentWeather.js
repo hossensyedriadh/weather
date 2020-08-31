@@ -2,6 +2,76 @@ import React from "react";
 import convert from 'convert-units';
 import '../stylesheets/CurrentWeather.css';
 
+const getCompassDesignation = (deg) => {
+    if (deg >= 0.00 && deg <= 11.25) {
+        return "N";
+    }
+
+    if (deg > 11.25 && deg <= 33.75) {
+        return "NNE";
+    }
+
+    if (deg > 33.75 && deg <= 56.25) {
+        return "NE";
+    }
+
+    if (deg > 56.25 && deg <= 78.75) {
+        return "ENE";
+    }
+
+    if (deg > 78.75 && deg <= 101.25) {
+        return "E";
+    }
+
+    if (deg > 101.25 && deg <= 123.75) {
+        return "ESE";
+    }
+
+    if (deg > 123.75 && deg <= 146.25) {
+        return "SE";
+    }
+
+    if (deg > 146.25 && deg <= 168.75) {
+        return "SSE";
+    }
+
+    if (deg > 168.75 && deg <= 191.25) {
+        return "S";
+    }
+
+    if (deg > 191.25 && deg <= 213.75) {
+        return "SSW";
+    }
+
+    if (deg > 213.75 && deg <= 236.25) {
+        return "SW";
+    }
+
+    if (deg > 236.25 && deg <= 258.75) {
+        return "WSW";
+    }
+
+    if (deg > 258.75 && deg <= 281.25) {
+        return "W";
+    }
+
+    if (deg > 281.25 && deg <= 303.75) {
+        return "WNW";
+    }
+
+    if (deg > 303.75 && deg <= 326.25) {
+        return "NW";
+    }
+
+    if (deg > 326.25 && deg <= 348.75) {
+        return "NNW";
+    }
+
+    if (deg > 348.75 && deg <= 359.99) {
+        return "N";
+    }
+}
+
 const CurrentWeather = (props) => {
     if (!props.weather.temp) {
         return (
@@ -11,6 +81,7 @@ const CurrentWeather = (props) => {
         );
     }
 
+    let compass = getCompassDesignation(props.weather.windDeg);
     let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -81,7 +152,7 @@ const CurrentWeather = (props) => {
                     className="mt-1 ml-2">{Math.round(convert(props.weather.windSpeed).from('m/s').to('km/h'))} km/h</strong></span>
                     <span className="row"><img src={require("../images/compass.png")} alt="wind_direction"
                                                style={{width: '2rem'}}/><strong
-                        className="mt-1 ml-2">{props.weather.windDeg}&deg;</strong></span>
+                        className="mt-1 ml-2">{props.weather.windDeg}&deg; {compass}</strong></span>
                 </div>
             </div>
         </section>
