@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+###Weather
+<hr>
+A weather reporting app developed with React.js
+<hr>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -70,4 +73,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 =======
 # weather
 A weather reporting applicaiton built with ReactJS using OpeanWeatherMap API and OpenCageData API
->>>>>>> 2abeaa11f1c4664f84ec87a6137ba9c4527fd34e
