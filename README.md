@@ -1,4 +1,4 @@
-###Weather
+## Weather
 <hr>
 A weather reporting app developed with React.js
 <hr>
