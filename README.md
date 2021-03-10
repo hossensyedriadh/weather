@@ -71,5 +71,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
-# weather
-A weather reporting applicaiton built with ReactJS using OpeanWeatherMap API and OpenCageData API
+# Weather
+A weather reporting application built with ReactJS using OpeanWeatherMap API and OpenCageData API
